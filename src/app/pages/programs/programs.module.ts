@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 
 import { ThemeModule } from '../../@theme/theme.module';
-import { DashboardComponent } from './dashboard.component';
-
+import { ProgramsRoutingModule, routedComponents } from './programs-routing.module';
 
 @NgModule({
   imports: [
     ThemeModule,
+    ProgramsRoutingModule,
   ],
   declarations: [
-    DashboardComponent,
+    ...routedComponents,
   ],
 })
-export class DashboardModule { }
+export class ProgramsModule { }
