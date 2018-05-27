@@ -36,7 +36,7 @@
                   </button>
                 </td>
                 <td>{{ person.Name }}</td>
-                <td>{{ person.DateOfBirth.toDateString() }}</td>
+                <td>{{ person.DateOfBirth | date }}</td>
                 <td>
                   <div>{{ person.Address.Street1 }}</div>
                   <div [hidden]="person.Address.Street2.length == 0">{{ person.Address.Street2 }}</div>
